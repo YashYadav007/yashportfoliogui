@@ -1,7 +1,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ["./pages/**/*.{js, jsx}", "./components/**/*.{js, jsx}"],
+  content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
   theme: {
     screens: {
       xs: "475px",
@@ -42,6 +42,8 @@ module.exports = {
     extend: {
       animation: {
         meteor: "meteor 5s linear infinite",
+        'spin-slow': 'spin 40s linear infinite',
+        'pulse-soft': 'pulseSoft 6s ease-in-out infinite',
       },
       keyframes: {
         meteor: {
@@ -56,6 +58,10 @@ module.exports = {
             transform: "rotate(215deg) translateX(-500px)",
             opacity: 0,
           },
+        },
+        pulseSoft: {
+          "0%, 100%": { opacity: 0.6 },
+          "50%": { opacity: 0.25 },
         },
       },
     },

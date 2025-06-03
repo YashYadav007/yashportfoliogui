@@ -1,21 +1,20 @@
 export const METADATA = {
-  author: "Shubh Porwal",
-  title: "Portfolio | Shubh Porwal",
-  description:
-    "Shubh Porwal is a passionate Frontend Engineer, dedicated to crafting aesthetic and modern apps that captivate and engage users.",
-  siteUrl: "https://www.shubhporwal.me/",
-  twitterHandle: "@shubhporwal24",
+  author: "Yash Yadav",
+  title: "Portfolio | Yash Yadav",
+  description: "Yash Yadav is a passionate developer exploring AI, ML, and web apps.",
+  siteUrl: "https://yourdomain.vercel.app/",
+  twitterHandle: "",
   keywords: [
-    "Shubh Porwal",
+    "Yash Yadav",
     "Frontend Engineer",
     "React Native Developer",
     "Software Engineer",
     "Portfolio",
     "Devfolio",
     "Folio",
+    "Gen Ai"
   ].join(", "),
-  image:
-    "https://res.cloudinary.com/dywdhyojt/image/upload/v1721378510/social-preview.png",
+  image:"",
   language: "English",
   themeColor: "#000000",
 };
@@ -44,98 +43,104 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "A pragmatic Frontend Developer",
-  "I build things for the web",
-  "I create aesthetic and modern apps",
-];
+  "An aspiring Developer",
+  "Loves building smart user experiences",
+  "Engineer who blends logic with design",
+]
+;
 
 export const SOCIAL_LINKS = [
   {
     name: "mail",
-    url: "mailto: shubhporwal73@gmail.com",
+    url: "mailto: yahsuyadav197@gmail.com",
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/in/shubhporwal/",
+    url: "https://www.linkedin.com/in/YashYadav009/",
   },
   {
     name: "github",
-    url: "https://github.com/shubh73",
+    url: "https://github.com/YashYadav007",
   },
   {
     name: "instagram",
-    url: "https://www.instagram.com/shubhii73/",
+    url: "https://www.instagram.com/yashyash009/",
   },
   {
     name: "twitter",
-    url: "https://x.com/shubhporwal24",
+    url: "--",
   },
 ];
 
 export const SKILLS = {
   languagesAndTools: [
+    "python",
+    "java",
+    "c++",
     "html",
     "css",
     "javascript",
-    "typescript",
-    "sass",
+    "lua",
     "nodejs",
-    "webpack",
+    "openaiw",
     "vite",
-    "firebase",
+    "php",
     "figma",
-    "tanstack-query",
+    "llm",
+    "gemini"
   ],
   librariesAndFrameworks: [
     "react",
-    "redux",
     "nextjs",
     "tailwindcss",
-    "styledcomponents",
-    "antdesign",
-    "chakra-ui",
+    "jinja",
+    "fastapi",
+    "spring",
+    "tenserflow",
+    "streamlit",
+    "flutter"
   ],
   databases: ["mysql", "mongodb"],
-  other: ["git", "sanity-io"],
+  other: ["git", "vscode" , "ollamaw" , "aistudio" , "jupyter" ],
 };
 
 export const PROJECTS = [
   {
-    name: "Airbnb",
-    image: "/projects/airbnb.webp",
-    blurImage: "/projects/blur/airbnb-blur.webp",
-    description: "Airbnb UI clone using NextJS + Tailwind CSS 🛏️",
-    gradient: ["#F14658", "#DC2537"],
-    url: "https://shubh73-airbnb.vercel.app/",
-    tech: ["react", "nextjs", "tailwindcss", "mapbox"],
-  },
-  {
-    name: "Medium",
-    image: "/projects/medium.webp",
-    blurImage: "/projects/blur/medium-blur.webp",
-    description: "Medium UI clone using NextJS + Tailwind CSS ✍🏻",
+    name: "Auto-Gen Sollution for Iot Devices",
+    image: "/projects/studio.png",
+    blurImage: "/projects/blur/studio.png",
+    description: "No coding. No struggle. Just AI-powered device onboarding.🤖",
     gradient: ["#FFA62E", "#EA4D2C"],
-    url: "https://shubh73-medium.vercel.app/",
-    tech: ["typescript", "react", "nextjs", "tailwindcss", "sanity.io"],
+    url: "https://github.com/YashYadav007/Gen-Ai-Iot-Devices-",
+    tech: ["aistudio", "matter", "jinja", "lua"],
   },
   {
-    name: "Inshorts",
+    name: "One-Tap Video Object Eraser",
+    image: "/projects/propainter.png",
+    blurImage: "/projects/blur/medium-blur.webp",
+    description: "Unwanted object? Gone in a tap — like magic for your videos.✨",
+    gradient: ["#142D46", "#2E4964"],
+    url: "https://github.com/YashYadav007",
+    tech: ["flutter", "python", "tenserflow", "fastapi"],
+  },
+  {
+    name: "Perfect-Pixel",
     image: "/projects/inshorts.webp",
     blurImage: "/projects/blur/airbnb-blur.webp",
     description:
-      "Conversational Voice Controlled React News Application using Alan AI 🎙",
-    gradient: ["#000066", "#6699FF"],
-    url: "https://shubh73-inshorts.netlify.app/",
-    tech: ["react", "chakra-ui", "alan"],
+      "Generation of pixel perfect image with embedded data🎙",
+    gradient: ["#142D46", "#2E4964"],
+    url: "https://github.com/YashYadav007/pixelperfect",
+    tech: ["streamlit", "python", "ollamaw"],
   },
   {
-    name: "Tesla",
-    image: "/projects/tesla.webp",
+    name: "Codsick",
+    image: "/projects/codsick.png",
     blurImage: "/projects/blur/tesla-blur.webp",
-    description: "A Tesla React Native App 🏎️",
-    gradient: ["#142D46", "#2E4964"],
-    url: "https://github.com/shubh73/tesla",
-    tech: ["react"],
+    description: "Take Your Career to the Next Level with CodSick.🏎️",
+    gradient: ["#FFA62E", "#EA4D2C"],
+    url: "https://cod-sick.vercel.app/",
+    tech: ["react","mongodb", "gemini", "tailwindcss"],
   },
 ];
 
@@ -185,88 +190,90 @@ export const PROJECTS = [
 // ];
 
 export const WORK_CONTENTS = {
-  DUKAAN: [
+  SAMSUNG: [
     {
-      title: "Dukaan",
+      title: "Samsung",
       description:
-        "Dukaan is a platform that enables businesses to launch their online stores at ease.",
+        "Samsung Research is the advanced R&D hub of Samsung Electronics, driving innovation across AI, next-gen communication, and device intelligence. At Samsung Research, I contributed to projects focused on applied AI and real-world deployment of intelligent systems.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Revolutionizing commerce, one click at a time
+          <img
+            src="/images/samsung.jpg"
+            alt="samsung logo"
+            className="h-300 w-auto mx-auto"
+          />
         </div>
       ),
     },
     {
-      title: "Transformation",
+      title: "Magpie",
       description:
-        "Since 2023, the Dukaan Seller Dashboard struggled with technical issues and a broken user experience due to accumulated technical debt. Leading a team of two junior developers, we migrated the dashboard from CSR to SSR, redesigned the UI, and overhauled the codebase in the process. This resolved the technical debt and vastly improved the user experience, making it Dukaan's largest and most impactful migration.",
+        "I am be working on real-world problems in the domain of applied AI and smart systems. While my work is in the early stages, this opportunity offers hands-on exposure to cutting-edge research, industry-grade tools, and collaborative innovation in one of the world’s leading tech environments. I'm excited to contribute meaningfully to impactful AI-driven projects under expert mentorship.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Senior Frontend Engineer
+          MAGPIE Research Intern
         </div>
       ),
     },
     {
-      title: "Evolution",
+      title: "Prism",
       description:
-        "Recognizing the need for improved performance and user engagement, I spearheaded the migration of the Dukaan App from native to React-Native for iOS and Android platforms. This strategic move led to a X% enhancement in app performance and a Y% boost in user engagement, representing a significant milestone in the app's evolution.",
+        "I contributed to the development of cutting-edge Generative AI solutions aimed at enhancing multimedia processing and content creation workflows. My work focused on building intelligent systems capable of real-time visual understanding, enabling tasks such as object removal and pixel-accurate scene reconstruction from complex video inputs. I collaborated closely with experienced researchers to prototype deployable models that combined efficiency with precision, gaining valuable experience in production-grade AI pipelines and model optimization.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Frontend Engineer
-        </div>
-      ),
-    },
-    {
-      title: "Optimization",
-      description:
-        "Leveraging user feedback and analytics, I improved the seller web dashboard design, reducing bounce rates. Simultaneously, I overhauled the build process, slashing bundle size and boosting overall performance.",
-      content: (
-        <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Frontend Engineer Intern
+          PRISM Intern
         </div>
       ),
     },
   ],
-  AVIATE: [
+  MOBILEPROGRAMMING: [
     {
-      title: "Aviate",
+      title: "Mobile Programming",
       description:
-        "Aviate is a preparation and mentorship platform for job-seekers that are seeking non-technical roles across top companies",
+        "Mobile Programming LLC is a global technology solutions provider, delivering cutting-edge software development services across industries with a focus on mobile, web, and enterprise solutions.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Finding the right job isn&apos;t fate, it&apos;s navigation
+          <img
+            src="/images/mobile.jpg"
+            alt="company logo"
+            className="h-300 w-auto mx-auto"
+          />
         </div>
       ),
     },
     {
       title: "Innovation",
       description:
-        "I spearheaded the development of Q-Rate, their flagship product, a voice-based applicant screening platform. Moreover, I took initiatives to enhance user engagement and drive substantial increases in daily traffic. Additionally, I implemented an error-logging and bug reporting system, significantly diminishing user-reported bugs.",
+        " I worked with the Java Spring framework to develop and maintain scalable backend services. I gained hands-on experience building real-world production-level systems, contributing directly to projects for clients like Betway, where I was involved in the development of REST APIs, database integrations, and performance optimizations. This role sharpened my understanding of microservices architecture, deployment pipelines, and secure backend development in a professional environment.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Frontend Developer Intern
+         Backend Intern
         </div>
       ),
     },
   ],
-  SPACENOS: [
+  COEDSAI: [
     {
-      title: "Spacenos",
+      title: "COE-DSAI",
       description:
-        "A dynamic startup dedicated to creating innovative products that make the world a better place.",
+        "A joint initiative by Thapar Institute's Centre of Data Science & Artificial Intelligence and partnering institute, fostering cutting-edge research and innovation in AI-driven real-world applications.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          We build apps that solve problems for the next billion people
+          <img
+            src="/images/dsai.png"
+            alt="dsai logo"
+            className="h-300 w-300 mx-1"
+          />
         </div>
       ),
     },
     {
-      title: "Trailblazing",
+      title: "Behaviourial Science",
       description:
-        "I led the comprehensive overhaul of the Admin Portal, implementing CRUD features for all services and providers. Additionally, I architected a feature enabling precise customer location tracking and delivering insightful usage statistics. Through optimized and compressed file serving, I catalyzed a remarkable Yx increase in page speed, resulting in a X% boost in customer retention.",
+        "Currently building an AI-powered adaptive learning system under a behavioral science initiative, focused on analyzing children's interaction patterns to tailor personalized educational content. By leveraging data-driven insights, the system recommends learning materials and videos aligned with each child's unique cognitive and engagement profile, fostering a more effective and intuitive learning experience.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Web Developer Intern
+          Exchange Program (Thapar x LMU)
         </div>
       ),
     },

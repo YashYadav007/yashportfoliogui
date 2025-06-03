@@ -54,8 +54,8 @@ const Skills = () => {
               My Skills
             </h1>
             <h2 className="text-[1.65rem] font-medium md:max-w-lg w-full mt-2 staggered-reveal">
-              I like to take responsibility to craft aesthetic user experience
-              using modern frontend architecture.{" "}
+              I architect sleek UIs that sit on top of state-of-the-art Generative AI—turning 
+              fine-tuned LLMs into products people love.{" "}
             </h2>
           </div>
           <div className="mt-10">

@@ -5,6 +5,8 @@ import Button from "../Button/Button";
 import Profiles from "../Profiles/Profiles";
 import styles from "./Hero.module.scss";
 import { MENULINKS, TYPED_STRINGS } from "../../constants";
+import VanillaTilt from "vanilla-tilt";
+
 
 const options = {
   strings: TYPED_STRINGS,
@@ -16,11 +18,11 @@ const options = {
 };
 
 const Hero = () => {
-  const [lottie, setLottie] = useState(null);
 
   const sectionRef = useRef(null);
   const typedElementRef = useRef(null);
-  const lottieRef = useRef(null);
+  const imgWrap = useRef(null);
+
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -38,28 +40,22 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
+    VanillaTilt.init(imgWrap.current, {
+      max: 10,
+      speed: 400,
+      scale: 1.05,
+      glare: true,
+      "max-glare": 0.25,
+    });
+  }, []);
+
+
+  useEffect(() => {
     const typed = new Typed(typedElementRef.current, options);
 
     return () => typed.destroy();
   }, [typedElementRef]);
 
-  useEffect(() => {
-    import("lottie-web").then((Lottie) => setLottie(Lottie.default));
-  }, []);
-
-  useEffect(() => {
-    if (lottie && lottieRef.current) {
-      const animation = lottie.loadAnimation({
-        container: lottieRef.current,
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        animationData: require("../../public/lottie/lottie.json"),
-      });
-
-      return () => animation.destroy();
-    }
-  }, [lottie]);
 
   return (
     <section
@@ -83,9 +79,9 @@ const Hero = () => {
         </h5>
         <h1 className={`${styles.heroName} text-white text-6xl font-semibold`}>
           <span className={`relative ${styles.emphasize} staggered-reveal`}>
-            Shubh
+            Yash
           </span>
-          <span className="staggered-reveal"> Porwal</span>
+          <span className="staggered-reveal"> Yadav</span>
         </h1>
         <p>
           <span
@@ -100,12 +96,59 @@ const Hero = () => {
           <Button href={`#${MENULINKS[4].ref}`} classes="link" type="primary">
             Let&apos;s Talk
           </Button>
+          
+        </div>
+        <div className="staggered-reveal pt-4">
+          <div className="staggered-reveal pt-4">
+          <Button href="https://yashportfolioterminal.vercel.app/" className="link" type="primary">
+            You&apos;re a Developer Too?
+          </Button>
+
+        </div>
         </div>
       </div>
       <div
-        className="absolute invisible w-4/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16"
-        ref={lottieRef}
-      />
+        ref={imgWrap}
+        className="absolute w-4/12 bottom-1.5 lg:right-12 2xl:right-16 hidden lg:block 
+                  rounded-[2rem] overflow-visible transform-gpu"
+        style={{ transformStyle: "preserve-3d" }}
+      >
+        {/* 🔹 Spinning Blob Background */}
+         <img
+          src="/svg/blob.svg"
+          alt=""
+          className="absolute -top-10 -left-8 w-[130%] animate-spin-slow
+                    pointer-events-none -z-20"
+        />
+
+        {/* 🟢 Blob #2 – smaller, opposite spin */}
+        <img
+          src="/svg/blob2_2.png"
+          alt=""
+          className="absolute -bottom-12 -right-20 w-96 animate-spin-slow
+                    opacity-70 pointer-events-none -z-30"
+        />
+
+        {/* 🟣 Blob #3 – static, just a tint */}
+        <img
+          src="/svg/blob.svg"
+          alt=""
+          className="absolute top-24 -left-24 w-80 opacity-60
+                    blur-2xl pointer-events-none -z-40"
+        />
+
+        {/* 🔸 Glowing Ring */}
+        
+
+        {/* 👤 Your main photo */}
+        <img
+          src="/images/yellowKurta.png"
+          alt="Yash Developer"
+          className="relative rounded-[2rem] shadow-2xl w-full h-auto"
+          style={{ transform: "translateZ(1rem)" }}
+        />
+      </div>
+
     </section>
   );
 };
