@@ -101,7 +101,7 @@ export const SKILLS = {
     "flutter"
   ],
   databases: ["mysql", "mongodb"],
-  other: ["git", "vscode" , "ollamaw" , "aistudio" , "jupyter" ],
+  other: ["git", "vsCode" , "ollamaw" , "aistudio" , "jupyter" ],
 };
 
 export const PROJECTS = [
